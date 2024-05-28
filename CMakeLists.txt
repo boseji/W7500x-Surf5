@@ -2,7 +2,12 @@ cmake_minimum_required(VERSION 3.5)
 
 set(PROJECT_NAME W7500-surf5)
 
+if (WIN32 OR MSVC)
 include(${CMAKE_SOURCE_DIR}/tools/arm-none-eabi-gcc.cmake)
+elseif (UNIX OR LINUX)
+include(${CMAKE_SOURCE_DIR}/tools/arm-none-eabi-gcc-linux.cmake)
+endif()
+
 project(${PROJECT_NAME} ASM C CXX)
 
     # Compiler options
