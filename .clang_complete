@@ -1,0 +1,3 @@
+-ILibraries/CMSIS/Device/WIZnet/W7500/Include
+-ILibraries/startup
+-ILibraries/W7500x_StdPeriph_Driver/inc

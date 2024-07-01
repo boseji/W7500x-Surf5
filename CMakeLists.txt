@@ -47,7 +47,7 @@ function(create_elf_file PROJECT_NAME)
     )
 endfunction()
 
-set(EXAMPLES_DIR ${CMAKE_SOURCE_DIR}/Projects/W7500x_StdPeriph_Examples)
+set(EXAMPLES_DIR ${CMAKE_SOURCE_DIR}/Projects)
 add_subdirectory(${EXAMPLES_DIR})
 add_subdirectory(Libraries)
 add_subdirectory(src)
